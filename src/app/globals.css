@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+
+
+
+html {
+    scroll-behavior: smooth;
+  }
+
+
+.transition__effect{
+  @apply ease-in-out transition-all duration-200;
+}
+
+.bg__parallax{
+  @apply bg-fixed bg-bottom bg-cover;
+}
+.bg__secondary{
+  @apply bg-blue-950;
+}
+
+
+.container__primary{
+  @apply w-[92%] mx-auto;
+}
+
+.container__secondary{
+  @apply lg:w-[70%] w-[92%] mx-auto;
+}
+
+
+
