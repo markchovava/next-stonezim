@@ -34,4 +34,11 @@ export const AdminNavData = [
         icon: 'message',
         css: `from-indigo-500 to-indigo-800 hover:from-indigo-500 hover:to-indigo-900`,
     },
+    {
+        id: 5, 
+        name: 'Help', 
+        href: '/admin/help', 
+        icon: 'help',
+        css: `from-emerald-500 to-emerald-800 hover:from-emerald-500 hover:to-emerald-900`,
+    },
 ]
