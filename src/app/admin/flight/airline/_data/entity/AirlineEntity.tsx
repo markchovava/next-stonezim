@@ -1,15 +1,17 @@
 import { UserEntity, UserInterface } from "@/app/admin/user/_data/entity/UserEntity"
 
+
 export interface AirlineInterface{
-    id: string | number,
-    userId: string | number,
+    id: string | number
+    userId: string | number
     user: UserInterface
-    name: string,
-    description: string,
-    priority: string | number,
-    createdAt: string,
-    updatedAt: string,
+    name: string
+    description: string
+    priority: string | number
+    createdAt: string
+    updatedAt: string
 }
+   
 
 
 export const AirlineEntity: AirlineInterface = {

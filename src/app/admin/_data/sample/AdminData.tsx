@@ -32,6 +32,6 @@ export const AdminNavData = [
         name: 'Message', 
         href: '/admin/message', 
         icon: 'message',
-        css: `from-cyan-500 to-indigo-800 hover:from-indigo-500 hover:to-indigo-900`,
+        css: `from-indigo-500 to-indigo-800 hover:from-indigo-500 hover:to-indigo-900`,
     },
 ]

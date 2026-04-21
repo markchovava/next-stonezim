@@ -89,6 +89,9 @@ import { BsCarFrontFill } from "react-icons/bs";
 import { MdOutlineFlight } from "react-icons/md";
 import { FaSearch } from "react-icons/fa";
 import { GoDotFill } from "react-icons/go";
+import { MdOutlineAirlines } from "react-icons/md";
+import { MdCabin } from "react-icons/md";
+import { LuPackage } from "react-icons/lu";
 
 
 interface PropsInterface {
@@ -102,12 +105,18 @@ export default function IconDefault({
 }: PropsInterface) {
 
     switch (type) {
+        case 'cabin':
+            return <MdCabin className={css} />
+        case 'package':
+            return <LuPackage className={css} />
         case 'dot':
             return <GoDotFill className={css} />
         case 'search':
             return <FaSearch className={css} />
         case 'flight':
             return <MdOutlineFlight className={css} />
+        case 'airline':
+            return <MdOutlineAirlines className={css} />
         case 'car':
             return <BsCarFrontFill className={css} />
         case 'route':

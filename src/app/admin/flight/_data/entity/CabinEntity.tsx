@@ -8,6 +8,7 @@ export interface CabinInterface{
     description: string,
     airline: AirlineInterface
     airlineId: string | number,
+    price: string | number,
     priority: string | number,
     cabinSpecs: CabinSpecInterface[]
     createdAt: string,
@@ -22,6 +23,7 @@ export const CabinEntity: CabinInterface = {
     airline: AirlineEntity,
     airlineId: '',
     cabinSpecs: [],
+    price: '',
     description: '',
     priority: '',
     createdAt: '',
