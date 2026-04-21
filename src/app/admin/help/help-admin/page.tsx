@@ -8,7 +8,8 @@ import HelpAddModal from './_components/HelpAdminAddModal'
 const CrumbsData = [
     {id: 1, name: 'Home', href: '/'},
     {id: 2, name: 'Admin', href: '/admin'},
-    {id: 3, name: 'Messages', href: '/admin/message'},
+    {id: 3, name: 'Help Dashboard', href: '/admin/help'},
+    {id: 3, name: 'Help', href: '/admin/help/help-admin'},
 ]
 
 export default function page() {

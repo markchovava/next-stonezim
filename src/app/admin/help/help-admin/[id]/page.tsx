@@ -8,7 +8,7 @@ import HelpAdminEditModal from "./_components/HelpAdminEditModal"
 const CrumbsData = [
     {id: 1, name: 'Home', href: '/'},
     {id: 2, name: 'Admin', href: '/admin'},
-    {id: 3, name: 'Help Admin', href: '/admin/help/help-admin'},
+    {id: 3, name: 'Help Dashboard', href: '/admin/help/help-admin'},
     
 ]
 
@@ -22,7 +22,7 @@ export default async function page({ params }: PropInterface) {
     const { id } = await params;
     const CrumbList = [
         ...CrumbsData, 
-        {id: 4, name: 'View HelpAdmin', href: '/admin/help/help-admin/${id}'},
+        {id: 4, name: 'View Help', href: '/admin/help/help-admin/${id}'},
     ]
 
   return (

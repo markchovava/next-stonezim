@@ -4,24 +4,24 @@ import Button from "@/app/(main)/_components/buttons/Button"
 import Title from "@/app/(main)/_components/titles/Title"
 import Link from "next/link"
 import ButtonPaginate from "@/app/(main)/_components/buttons/ButtonPaginate"
-import { useMessageStore } from "../_data/store/useHelpAdminStore"
+import { useHelpAdminStore } from "../_data/store/useHelpAdminStore"
 import SearchForm from "@/app/admin/_components/forms/SearchForm"
 import ViewButton from "@/app/admin/_components/buttons/ViewButton"
 import DeleteButton from "@/app/admin/_components/buttons/DeleteButton"
 
 
 
-const title = 'Messages'
+const title = 'Help'
 
 
-export default function MessagePage() {
+export default function HelpAdminPage() {
     const {
         search, 
         isSearching, 
         setIsSearching, 
         setSearch, 
         setToggleModal
-    } = useMessageStore()
+    } = useHelpAdminStore()
 
     const handleSearch = async () => {}
 
@@ -51,7 +51,7 @@ export default function MessagePage() {
                 />
             </div>
 
-            <MessageTableSection />
+            <HelpAdminTableSection />
 
 
         </section>
@@ -61,32 +61,30 @@ export default function MessagePage() {
 }
 
 
-function MessageTableSection(){
+function HelpAdminTableSection(){
      const {
         search, 
         isSearching, 
         setIsSearching, 
         setSearch, 
         setToggleModal
-    } = useMessageStore()
+    } = useHelpAdminStore()
 
     return(
         <>
             <section className="lg:block hidden w-full">
                 <div className="w-full text-lg font-semibold border border-gray-300 bg-gray-100 flex items-center justify-start">
-                    <div className="w-[30%] px-4 py-2 border-r border-gray-300">NAME</div>
-                    <div className="w-[40%] px-4 py-2 border-r border-gray-300">EMAIL</div>
-                    <div className="w-[20%] px-4 py-2 border-r border-gray-300">STATUS</div>
+                    <div className="w-[40%] px-4 py-2 border-r border-gray-300">TITLE</div>
+                    <div className="w-[50%] px-4 py-2 border-r border-gray-300">DETAILS</div>
                     <div className="w-[10%] flex items-center justify-end px-4 py-2 ">ACTIONS</div>
                 </div>
                 {[...Array(5)].map((i, key) => (
                     <div key={key} className="text-gray-700 w-full border border-gray-300 flex items-center justify-start">
-                        <div className="w-[30%] px-4 py-2 border-r border-gray-300">NAME</div>
-                        <div className="w-[40%] px-4 py-2 border-r border-gray-300">EMAIL</div>
-                        <div className="w-[20%] px-4 py-2 border-r border-gray-300">STATUS</div>
+                        <div className="w-[40%] px-4 py-2 border-r border-gray-300">TITLE</div>
+                        <div className="w-[50%] px-4 py-2 border-r border-gray-300">DETAILS</div>
                         <div className="w-[10%] px-4 py-2 flex items-center justify-end gap-3">
                             <Link 
-                                href='/admin/message/1' 
+                                href='/admin/help/help-admin/1' 
                                 className="flex items-center justify-center">
                                 <ViewButton />
                             </Link>
@@ -100,7 +98,7 @@ function MessageTableSection(){
                 {[...Array(5)].map((i, key) => (
                     <div key={key} className="bg-white text-gray-700 drop-shadow border border-gray-200 rounded-xl overflow-hidden p-6">
                         <div className="flex items-center justify-end gap-3">
-                                <Link href='/admin/flight/airline/1' className="flex items-center justify-center">
+                                <Link href='/admin/help/help-admin/1' className="flex items-center justify-center">
                                     <ViewButton />
                                 </Link>
                                 <DeleteButton onClick={() => {}} />

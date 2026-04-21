@@ -7,14 +7,14 @@ import TextInput from '@/app/(main)/_components/forms/inputs/TextInput';
 import Button from '@/app/(main)/_components/buttons/Button';
 import SelectInput from '@/app/(main)/_components/forms/selects/SelectInput';
 import TextArea from '@/app/(main)/_components/forms/textareas/TextArea';
-import { useMessageStore } from '../_data/store/useHelpAdminStore';
 import ButtonAdminClose from '@/app/admin/_components/buttons/ButtonAdminClose';
 import { PriorityData } from '@/app/admin/_data/sample/PriorityData';
+import { useHelpAdminStore } from '../_data/store/useHelpAdminStore';
 
 
 
 
-const title = "Add Message"
+const title = "Add Help"
 
 const variants: Variants = {
     hidden: { opacity: 0 },
@@ -27,7 +27,7 @@ const variants: Variants = {
     },
 }
 
-export default function MessageAddModal() {
+export default function HelpAdminAddModal() {
     const { 
         data, 
         errors,
@@ -37,7 +37,7 @@ export default function MessageAddModal() {
         setInputValue, 
         setToggleModal, 
         clearErrors,
-    } = useMessageStore()
+    } = useHelpAdminStore()
 
     useEffect(() => {
         resetData()
@@ -74,37 +74,24 @@ export default function MessageAddModal() {
                                 <Title name={title} css='text-center mx-auto mb-3' />
                                 <hr className="w-full border-b border-gray-100" />
                             </div>
-                            <form onSubmit={handleSubmit} className='space-y-4'>
-                                
+                            <form onSubmit={handleSubmit} className='space-y-4'>   
                                 <TextInput
-                                    label='Name:' 
-                                    name='name' 
+                                    label='Title:' 
+                                    name='title' 
                                     type="text"
-                                    value={data.name} 
-                                    placeholder='Enter the airline name.'
+                                    value={data.title} 
+                                    placeholder='Enter Title / Question here.'
                                     onChange={setInputValue} 
-                                    error={errors.name}
+                                    error={errors.title}
                                 />
-
-                                <TextInput
-                                    label='Email:' 
-                                    name='email' 
-                                    type="email"
-                                    value={data.email} 
-                                    placeholder='Enter the user email.'
-                                    onChange={setInputValue} 
-                                    error={errors.email}
-                                />
-
                                 <TextArea
-                                    label='Message' 
+                                    label='Details' 
                                     name='message' 
-                                    value={data.message} 
-                                    placeholder='Enter the Message.'
+                                    value={data.details} 
+                                    placeholder='Enter the Details here.'
                                     onChange={setInputValue} 
-                                    error={errors.message}
+                                    error={errors.details}
                                 />
-                                
                                <SelectInput 
                                     label='Priority:' 
                                     name='priority' 
@@ -113,7 +100,6 @@ export default function MessageAddModal() {
                                     onChange={setInputValue} 
                                     error={errors.priority}
                                />
-                            
                                 <div className='flex items-center justify-center'>
                                     <Button 
                                         name='Submit' 

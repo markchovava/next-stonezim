@@ -22,7 +22,7 @@ export default function TextArea({
 
   return (
     <div className="mb-4">
-        <p className="mb-1 font-light">{label}:</p>
+        <p className="font-medium text-sm text-gray-700 mb-1">{label}:</p>
         <textarea
         name={name}
         value={value}

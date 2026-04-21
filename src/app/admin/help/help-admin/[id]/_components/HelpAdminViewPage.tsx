@@ -8,7 +8,7 @@ import { useHelpAdminStore } from "../../_data/store/useHelpAdminStore"
 
 
 
-const title = 'View HelpAdmin'
+const title = 'View Help'
 
 
 interface Props{
@@ -39,11 +39,7 @@ export default function HelpAdminViewPage({
                             value={valueWithFallback(data.title)} 
                         />
                         <AdminRecord 
-                            label='Email' 
-                            value={valueWithFallback(data.category)} 
-                        />
-                        <AdminRecord 
-                            label='HelpAdmin' 
+                            label='Details' 
                             value={valueWithFallback(data.details)} 
                         />
                         <AdminRecord 
