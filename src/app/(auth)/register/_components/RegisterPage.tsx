@@ -24,7 +24,7 @@ export default function RegisterPage() {
     <main className="py-24">
         <section className="mx-auto w-[92%] lg:w-[50%] rounded-xl bg-white drop-shadow-lg px-6 py-8">
             <div className="flex flex-col items-center justify-center mb-4">
-                <Logo color="text-blue-800 mb-4" />
+                <Logo />
                 <h2 className="font-medium text-xl text-gray-700">
                   {title}
                 </h2>
