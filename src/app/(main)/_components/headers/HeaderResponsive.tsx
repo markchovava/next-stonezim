@@ -3,12 +3,14 @@
 import Link from "next/link"
 import { useNavStore } from "../../_store/useNavStore"
 import ButtonMenu from "../buttons/ButtonMenu"
-import Logo from "../logos/Logo"
 import { AnimatePresence, motion } from "motion/react"
 import { useEffect } from "react"
 import NavTop from "../navs/NavTop"
 import IconNav from "../navs/IconNav"
 import HeroBanner from "../banner/BannerHero"
+import LogoTwo from "../logos/LogoTwo"
+
+
 
 export default function HeaderResponsive() {
   const {
@@ -18,7 +20,6 @@ export default function HeaderResponsive() {
   } = useNavStore()
 
   const handleClose = () => setIsMenu(false)
-  const handleToggle = () => setIsMenu(!isMenu)
 
   // Lock body scroll when menu is open
   useEffect(() => {
@@ -40,13 +41,13 @@ export default function HeaderResponsive() {
     <header className="lg:hidden block">
         
         <section className="w-full bg-white drop-shadow">
-            <div className="text-white bg-blue-900">
+            <div className="text-white bg-green-900">
                 <NavTop />
             </div>
             <section className="container__primary">
             </section>
             <section className="container__primary flex items-center justify-between pt-4 pb-4">
-            <Logo color="text-blue-900" />
+            <LogoTwo />
             <ButtonMenu aria-label="Open navigation menu" />
             </section>
         </section>
@@ -86,7 +87,7 @@ export default function HeaderResponsive() {
                 >
                 {/* Panel header */}
                 <div className="shrink-0 flex items-center justify-between px-5 py-4 border-b border-gray-100">
-                    <Logo color="text-blue-900" />
+                    <LogoTwo />
                     <ButtonMenu
                     aria-label="Close navigation menu"
                     />

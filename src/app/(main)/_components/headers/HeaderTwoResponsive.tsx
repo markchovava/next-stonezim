@@ -8,6 +8,7 @@ import { AnimatePresence, motion } from "motion/react"
 import { useEffect } from "react"
 import NavTop from "../navs/NavTop"
 import IconNav from "../navs/IconNav"
+import LogoTwo from "../logos/LogoTwo"
 
 
 
@@ -48,7 +49,7 @@ export default function HeaderTwoResponsive() {
             <section className="container__primary">
             </section>
             <section className="container__primary flex items-center justify-between pt-4 pb-4">
-            <Logo color="text-blue-900" />
+            <LogoTwo />
             <ButtonMenu aria-label="Open navigation menu" />
             </section>
         </section>
@@ -84,7 +85,7 @@ export default function HeaderTwoResponsive() {
                 >
                 {/* Panel header */}
                 <div className="shrink-0 flex items-center justify-between px-5 py-4 border-b border-gray-100">
-                    <Logo color="text-blue-900" />
+                    <LogoTwo />
                     <ButtonMenu
                     aria-label="Close navigation menu"
                     />

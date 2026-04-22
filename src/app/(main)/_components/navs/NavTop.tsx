@@ -8,7 +8,7 @@ export default function NavTop() {
   return (
      <section className="relative w-full h-10 overflow-hidden">
         {/* Overlay: Using inset-0 is shorthand for top-0 right-0 bottom-0 left-0 */}
-        <div className="absolute inset-0 bg-slate-950 opacity-70 z-10"></div>
+        <div className="absolute inset-0 bg-green-950 opacity-70 z-10"></div>
 
         {/* Content Layer */}
         <div className="absolute inset-0 z-20 flex items-center justify-center">

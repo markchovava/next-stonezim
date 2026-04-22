@@ -2,9 +2,10 @@
 
 import Link from "next/link"
 import { useNavStore } from "../../_store/useNavStore"
-import Logo from "../logos/Logo"
 import NavTop from "./NavTop"
 import IconNavTwo from "./IconNavTwo"
+import LogoTwo from "../logos/LogoTwo"
+
 
 
 export default function NavTwo() {
@@ -17,7 +18,7 @@ export default function NavTwo() {
         </div>
 
         <div className='container__primary text-gray-800 flex items-center justify-between pt-6'>
-            <Logo color="text-blue-900" />
+            <LogoTwo />
             <ul className="flex items-center justify-start gap-4">
                 {navList.map((i, key) => (
                     <NavItem 

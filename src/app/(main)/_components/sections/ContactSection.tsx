@@ -15,6 +15,7 @@ import FadeSlideIn from '../effects/FadeSlideIn'
 import TitleTwo from '../titles/TitleTwo'
 import TitleThree from '../titles/TitleThree'
 import { useAppInfoStore } from '@/app/admin/app-info/_data/store/useAppInfoStore'
+import Button from '../buttons/Button'
 
 
 
@@ -123,8 +124,8 @@ export default function ContactSection({withMap=false}: PropInterface) {
                         onChange={setInputValue}
                         error={errors.message}
                     />
-                    <ButtonPrimary
-                        title="Submit" 
+                    <Button
+                        name="Submit" 
                         status={isSubmitting}
                         css='text-lg py-3 px-9 text-white' 
                     />

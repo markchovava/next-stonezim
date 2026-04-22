@@ -23,7 +23,7 @@ export default function HeroBanner() {
     return ( 
         <section style={{
             backgroundImage: 'url("/assets/images/banner/02.jpg")',
-        }} className="h-full relative w-full bg-fixed bg-center bg-cover bg-linear-to-br from-blue-500 to-blue-950 text-white">
+        }} className="h-full relative w-full bg-fixed bg-center bg-cover bg-linear-to-br from-green-500 to-green-950 text-white">
             <div className="top-0 left-0 w-full h-full absolute z-5 bg-linear-to-tr from-gray-950 to-90% to-transparent">
                 <div className="container__primary h-full flex flex-col items-start justify-center">
                     <div className="relative lg:w-[50%] w-[80%] h-full flex flex-col items-start justify-center">

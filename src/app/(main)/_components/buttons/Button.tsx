@@ -22,7 +22,8 @@ export default function Button({
         onClick={onClick} 
         type={type} 
         disabled={status}
-        className={`${css} group relative flex items-center justify-center gap-1 cursor-pointer bg-linear-to-br from-blue-500 to-blue-800 rounded-full overflow-hidden transition-all duration-300 hover:to-blue-900`}>
+        className={`${css} group relative flex items-center justify-center gap-1 cursor-pointer bg-linear-to-br 
+        from-green-500 to-green-800 rounded-full overflow-hidden transition-all duration-300 hover:to-green-900`}>
         {/* The Text: Shifts slightly to the left to make room for the icon */}
         <span className="translate-x-2 group-hover:-translate-x-1 transition-transform duration-300 ease-in-out font-normal text-white">
             {name}

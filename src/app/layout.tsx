@@ -3,16 +3,15 @@ import "./globals.css";
 /* ToastContainer */
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import Header from "./(main)/_components/headers/Header";
 import Footer from "./(main)/_components/footers/Footer";
 
 
 export const metadata: Metadata = {
-  title: "FambaNow",
-  description: "Famba Now",
-  keywords: ["Famba Now", ],
+  title: "StoneZim Travel",
+  description: "StoneZim Travel",
+  keywords: ["StoneZim Travel", 'zimtravel', 'travel agency in zimbabwe', 'zimbabwe travel', 'africa travel', 'safari tours', 'cultural tours', 'adventure tours', 'family vacations', 'group travel', 'custom itineraries'],
   verification: {
-    google: 'uzEnE4Z0slrSXHljnm7EKx2ZivfC8FgjZVlFUFXPGUY',
+    google: '',
   },
 };
 
@@ -23,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
+      <body data-scroll-behavior="smooth"
         className={`antialiased min-h-screen`}>
 
         {children}
