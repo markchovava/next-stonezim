@@ -13,5 +13,4 @@ export const HelpNavData = [
         icon: 'category',
         css: `from-cyan-500 to-cyan-800 hover:from-cyan-500 hover:to-cyan-900`,
     },
-
 ]

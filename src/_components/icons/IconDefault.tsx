@@ -4,6 +4,9 @@ import {
     AiOutlineDashboard, 
     AiOutlineDatabase 
 } from "react-icons/ai";
+import { BiBuildingHouse } from "react-icons/bi";
+import { BsCarFrontFill } from "react-icons/bs";
+import { FaSearch, } from "react-icons/fa"
 import { 
     FaAngleDown, 
     FaAngleLeft, 
@@ -28,6 +31,7 @@ import {
     GiHamburgerMenu, 
     GiMountaintop 
 } from "react-icons/gi";
+import { GoDotFill } from "react-icons/go";
 import { 
     GrContact 
 } from "react-icons/gr";
@@ -46,14 +50,18 @@ import {
     IoSettingsOutline 
 } from "react-icons/io5";
 import { 
-    LuEyeClosed 
+    LuEyeClosed,
+    LuPackage
 } from "react-icons/lu";
 import { 
     MdBorderAll, 
+    MdCabin,
     MdInfoOutline, 
+    MdOutlineAirlines,
     MdOutlineCategory, 
     MdOutlineDescription, 
     MdOutlineDesignServices, 
+    MdOutlineFlight,
     MdOutlineGroups, 
     MdOutlineMailOutline, 
     MdOutlineMessage, 
@@ -62,11 +70,15 @@ import {
     MdOutlineVideoLibrary 
 } from "react-icons/md";
 import { 
+    PiAirplaneTiltLight,
+    PiCity,
     PiSolarRoofDuotone 
 } from "react-icons/pi";
 import { 
     RiCalendarEventLine, 
-    RiDeleteBin2Fill 
+    RiDeleteBin2Fill,
+    RiRouteLine,
+    RiTimeLine 
 } from "react-icons/ri";
 import { 
     SiMaterialdesignicons 
@@ -81,18 +93,6 @@ import {
 import { 
     VscProject 
 } from "react-icons/vsc";
-import { BiBuildingHouse } from "react-icons/bi";
-import { PiAirplaneTiltLight } from "react-icons/pi";
-import { RiTimeLine } from "react-icons/ri";
-import { RiRouteLine } from "react-icons/ri";
-import { BsCarFrontFill } from "react-icons/bs";
-import { MdOutlineFlight } from "react-icons/md";
-import { FaSearch } from "react-icons/fa";
-import { GoDotFill } from "react-icons/go";
-import { MdOutlineAirlines } from "react-icons/md";
-import { MdCabin } from "react-icons/md";
-import { LuPackage } from "react-icons/lu";
-
 
 interface PropsInterface {
     type: string
@@ -105,34 +105,23 @@ export default function IconDefault({
 }: PropsInterface) {
 
     switch (type) {
-        case 'cabin':
-            return <MdCabin className={css} />
-        case 'package':
-            return <LuPackage className={css} />
-        case 'dot':
-            return <GoDotFill className={css} />
-        case 'search':
-            return <FaSearch className={css} />
-        case 'flight':
-            return <MdOutlineFlight className={css} />
-        case 'airline':
-            return <MdOutlineAirlines className={css} />
-        case 'car':
-            return <BsCarFrontFill className={css} />
-        case 'route':
-            return <RiRouteLine className={css} />
-        case 'time':
-            return <RiTimeLine className={css} />
         case 'add':
             return <IoAddCircleOutline className={css} />
+        case 'address':
+        case 'city':
+        case 'location':
+        case 'map':
+            return <IoLocationOutline className={css} />
+        case 'airline':
+            return <MdOutlineAirlines className={css} />
         case 'airplane':
             return <PiAirplaneTiltLight className={css} />
-        case 'house':
-            return <BiBuildingHouse className={css} />
-        case 'address':
-            return <FaLocationDot className={css} />
+        case 'cabin':
+            return <MdCabin className={css} />
         case 'calendar':
             return <RiCalendarEventLine className={css} />
+        case 'car':
+            return <BsCarFrontFill className={css} />
         case 'category':
             return <MdOutlineCategory className={css} />
         case 'client':
@@ -147,6 +136,8 @@ export default function IconDefault({
             return <RiDeleteBin2Fill className={css} />
         case 'document':
             return <IoDocumentsOutline className={css} />
+        case 'dot':
+            return <GoDotFill className={css} />
         case 'down':
             return <FaAngleDown className={css} />
         case 'email':
@@ -157,10 +148,14 @@ export default function IconDefault({
             return <LuEyeClosed className={css} />
         case 'facebook':
             return <FaFacebook className={css} />
+        case 'flight':
+            return <MdOutlineFlight className={css} />
         case 'help':
             return <IoMdHelp className={css} />
         case 'home':
             return <IoHomeOutline className={css} />
+        case 'house':
+            return <BiBuildingHouse className={css} />
         case 'image':
             return <FaImages className={css} />
         case 'info':
@@ -171,8 +166,6 @@ export default function IconDefault({
             return <FaAngleLeft className={css} />
         case 'linkedin':
             return <FaLinkedin className={css} />
-        case 'location':
-            return <IoLocationOutline className={css} />
         case 'media':
             return <TiMediaPlay className={css} />
         case 'menu':
@@ -185,6 +178,8 @@ export default function IconDefault({
             return <GiMountaintop className={css} />
         case 'order':
             return <MdBorderAll className={css} />
+        case 'package':
+            return <LuPackage className={css} />
         case 'page':
             return <MdOutlineDescription className={css} />
         case 'partner':
@@ -197,12 +192,18 @@ export default function IconDefault({
             return <MdOutlineProductionQuantityLimits className={css} />
         case 'project':
             return <VscProject className={css} />
+        case 'property':
+            return <PiCity className={css} />
         case 'remove':
             return <IoMdRemoveCircleOutline className={css} />
         case 'right':
             return <FaAngleRight className={css} />
         case 'role':
             return <MdOutlineGroups className={css} />
+        case 'route':
+            return <RiRouteLine className={css} />
+        case 'search':
+            return <FaSearch className={css} />
         case 'service':
             return <MdOutlineDesignServices className={css} />
         case 'settings':
@@ -219,6 +220,8 @@ export default function IconDefault({
             return <IoIosPricetags className={css} />
         case 'tiktok':
             return <FaTiktok className={css} />
+        case 'time':
+            return <RiTimeLine className={css} />
         case 'twitter':
             return <FaXTwitter className={css} />
         case 'up':
