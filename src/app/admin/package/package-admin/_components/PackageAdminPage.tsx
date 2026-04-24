@@ -79,8 +79,8 @@ function PackageTableSection(){
                 </div>
                 {[...Array(5)].map((i, key) => (
                     <div key={key} className="text-gray-700 w-full border border-gray-300 flex items-center justify-start">
-                        <div className="w-[50%] px-4 py-2 border-r border-gray-300">NAME</div>
-                        <div className="w-[40%] px-4 py-2 border-r border-gray-300">CITY</div>
+                        <div className="w-[45%] px-4 py-2 border-r border-gray-300">NAME</div>
+                        <div className="w-[45%] px-4 py-2 border-r border-gray-300">CITY</div>
                         <div className="w-[10%] px-4 py-2 flex items-center justify-end gap-3">
                             <Link 
                                 href='/admin/package/package-admin/1' 

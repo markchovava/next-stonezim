@@ -26,6 +26,7 @@ export interface RoomInterface{
     name: string
     ratingData: string
     rating: number | string
+    priority: string | number
     description: string
     property: PropertyInterface
     propertyId: number | string
@@ -37,6 +38,7 @@ export const RoomEntity: RoomInterface = {
     name: '',
     ratingData: '',
     rating: 0,
+    priority: '',
     description: '',
     property: PropertyEntity,
     propertyId: '',
@@ -49,6 +51,7 @@ export interface RoomDetailInterface{
     id: number | string
     name: string
     value: string
+    priority: string | number
     roomId: number | string
     room: RoomInterface
     createdAt: string
@@ -59,6 +62,7 @@ export const RoomDetailEntity: RoomDetailInterface = {
     id: '',
     name: '',
     value: '',
+    priority: '',
     roomId: '',
     room: RoomEntity,
     createdAt: '',
@@ -70,6 +74,7 @@ export interface RoomImageInterface{
     id: number | string
     imageFile: File | null
     image: string
+    priority: string | number
     roomId: number | string
     room: RoomInterface
     createdAt: string
@@ -80,6 +85,7 @@ export const RoomImageEntity: RoomImageInterface = {
     id: '',
     imageFile: null,
     image: '',
+    priority: '',
     roomId: '',
     room: RoomEntity,
     createdAt: '',

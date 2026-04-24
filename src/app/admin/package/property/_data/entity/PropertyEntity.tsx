@@ -6,6 +6,7 @@ import { RoomInterface } from "./RoomEntity"
 export interface PropertyInterface{
     name: string
     address: string
+    priority: string | number
     cityId: number | string
     city: CityInterface
     rooms: RoomInterface[]
@@ -18,6 +19,7 @@ export const PropertyEntity: PropertyInterface = {
     name: '',
     address: '',
     cityId: '',
+    priority: '',
     city: CityEntity,
     rooms: [],
     images: [],
@@ -30,6 +32,7 @@ export interface PropertyImageInterface{
     id: number | string
     imageFile: File | null
     image: string
+    priority: string | number
     propertyId: number | string
     property: PropertyInterface
     createdAt: string
@@ -40,6 +43,7 @@ export const PropertyImageEntity: PropertyImageInterface = {
     id: '',
     imageFile: null,
     image: '',
+    priority: '',
     propertyId: '',
     property: PropertyEntity,
     createdAt: '',
