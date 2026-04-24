@@ -36,12 +36,12 @@ export default function RoleViewPage({
                         />
                        
                         <AdminRecord 
-                            label='Email' 
+                            label='Level' 
                             value={valueWithFallback(data.level)} 
                         />
                        
                         <AdminRecord 
-                            label='Facebook' 
+                            label='User' 
                             value={valueWithFallback(data.userId)} 
                         />
     

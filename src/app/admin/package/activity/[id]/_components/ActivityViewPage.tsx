@@ -2,7 +2,7 @@
 
 import Button from "@/app/(main)/_components/buttons/Button"
 import Title from "@/app/(main)/_components/titles/Title"
-import { useCityStore } from "../../_data/store/useCityStore"
+import { useActivityStore } from "../../_data/store/useActivityStore"
 import AdminRecord from "@/app/admin/_components/records/AdminRecord"
 import { valueWithFallback } from "@/_utils/StringManipulation"
 
@@ -11,16 +11,16 @@ interface Props{
   id: string | number
 }
 
-export default function CityViewPage({
+export default function ActivityViewPage({
   id
 }: Props) {
-  const { data, setToggleModal } = useCityStore()
+  const { data, setToggleModal } = useActivityStore()
 
   return (
     <main className="pt-20 pb-24">
         <section className="container__primary">
             <Title 
-              name='View City' 
+              name='View Activity' 
               css='border-b pb-2 mb-3 border-gray-300' 
             />
 

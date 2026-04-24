@@ -1,7 +1,7 @@
 import BreadCrumb from "@/_components/breadcrumbs/BreadCrumb"
 import HeaderTwo from "@/app/(main)/_components/headers/HeaderTwo"
-import CityViewPage from "./_components/CityViewPage"
-import CityEditModal from "./_components/CityEditModal"
+import ActivityViewPage from "./_components/ActivityViewPage"
+import ActivityEditModal from "./_components/ActivityEditModal"
 
 
 
@@ -10,7 +10,7 @@ const CrumbsData = [
     {id: 1, name: 'Home', href: '/'},
     {id: 2, name: 'Admin', href: '/admin'},
     {id: 3, name: 'Package Dashboard', href: '/admin/package'},
-    {id: 4, name: 'Cities', href: '/admin/package/city'},  
+    {id: 4, name: 'Activities', href: '/admin/package/activity'},  
 ]
 
 interface PropInterface {
@@ -23,15 +23,15 @@ export default async function page({ params }: PropInterface) {
     const { id } = await params;
     const CrumbList = [
         ...CrumbsData, 
-        {id: 5, name: 'View City', href: '/admin/package/city/${id}'},
+        {id: 5, name: 'View Activity', href: '/admin/package/activity/${id}'},
     ]
 
   return (
      <> 
         <HeaderTwo />
         <BreadCrumb data={CrumbList} />
-        <CityViewPage id={id} />
-        <CityEditModal id={id} />
+        <ActivityViewPage id={id} />
+        <ActivityEditModal id={id} />
     </>
   )
 }

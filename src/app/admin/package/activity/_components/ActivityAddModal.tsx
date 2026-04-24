@@ -8,13 +8,12 @@ import Button from '@/app/(main)/_components/buttons/Button';
 import SelectInput from '@/app/(main)/_components/forms/selects/SelectInput';
 import { PriorityData } from '@/app/admin/_data/sample/PriorityData';
 import ButtonAdminClose from '@/app/admin/_components/buttons/ButtonAdminClose';
-import { useCityStore } from '../../_data/store/useCityStore';
+import { useCityStore } from '../_data/store/useActivityStore';
 
  
 
 
-const title = "Edit City"
-
+const title = "Add City"
 
 const variants: Variants = {
     hidden: { opacity: 0 },
@@ -27,13 +26,7 @@ const variants: Variants = {
     },
 }
 
-interface Props{
-  id: string | number
-}
-
-export default function CityEditModal({ 
-    id 
-}: Props) {
+export default function CityAddModal() {
     const { 
         data, 
         errors,
