@@ -5,6 +5,7 @@ export interface CityInterface{
     name: string
     imageFile: File | null
     image: string
+    priority: string | number
     userId: number | string
     user: UserInterface
     createdAt: string
@@ -17,6 +18,7 @@ export const CityEntity: CityInterface = {
     name: '',
     imageFile: null,
     image: '',
+    priority: '',
     userId: '',
     user: UserEntity,
     createdAt: '',
