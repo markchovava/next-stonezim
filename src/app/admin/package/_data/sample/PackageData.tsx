@@ -20,4 +20,11 @@ export const PackageNavData = [
         icon: 'property',
         css: `from-purple-500 to-purple-800 hover:from-purple-500 hover:to-purple-900`,
     },
+    {
+        id: 3, 
+        name: 'Activities', 
+        href: '/admin/package/activity', 
+        icon: 'activity',
+        css: `from-fuchsia-500 to-fuchsia-800 hover:from-fuchsia-500 hover:to-fuchsia-900`,
+    },
 ]

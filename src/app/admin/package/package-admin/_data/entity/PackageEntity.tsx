@@ -8,6 +8,7 @@ export interface PackageInterface{
     id: number | string
     importantInfo: ReactNode
     policy: ReactNode
+    priority: number | string
     name: string
     ratingData: string
     rating: number | string
@@ -23,6 +24,7 @@ export interface PackageInterface{
 export const PackageEntity: PackageInterface = {
     id: '',
     importantInfo: <></>,
+    priority: '',
     policy: <></>,
     name: '',
     ratingData: '',
